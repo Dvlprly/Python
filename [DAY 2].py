@@ -17,7 +17,7 @@ print("Hello"[0])  # subscripting: pulling out a particular element
 # Integer
 123
 123_456_789  # for large integer = 123,456,789
-# Floatb
+# Float
 3.14
 #Boolean
 True
@@ -56,6 +56,11 @@ value /= 1
 # [f-String]
 value = 0
 print(f"str {value}")  # mixing different data types
+
+
+# [round()]
+value = round(value, 2)  # round to 2 decimals
+value = "{:.2f}.format(value)"  # 끝자리가 0으로 끝날 때
 
 
 #################################################################################################################################################
@@ -114,6 +119,5 @@ bill = float(input("What was the TOTAL bill? $"))
 tip = int(input("How much TIP would you like to give? 10, 12, 15? "))
 people = int(input("How many PEOPLE to split the bill? "))
 each_bill = (tip / 100 * bill + bill) / people
-final_amount = round(each_bill, 2)
-final_amount = "{:.2f}.format(each_bill)"  # 끝자리가 0으로 끝날 때
+final_amount = round(each_bill, 2)  # or final_amount = "{:.2f}.format(each_bill)"
 print(f"Each person should pay: ${final_amount}")
